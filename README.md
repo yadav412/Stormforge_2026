@@ -1,2 +1,2 @@
-# SFUEA_Hirng_Portal
+# SFUEA_Hiring_Portal
 SFUEA Hiring Portal
