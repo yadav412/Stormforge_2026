@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sfuea</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}"/>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  
+
+  
+    <h2>Password Generator</h2>
+    <form method="post">
+      <label>Length:</label>
+      <input type="number" name="length" min="12" max="64" required />
+      <button type="submit">Generate</button>
+    </form>
+
+    {% if password %}
+    <p><b>Your Password:</b> {{password}}</p>
+    {% endif %}
+  
+
+  </body>
+</html>
+
